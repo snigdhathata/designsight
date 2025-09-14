@@ -177,23 +177,7 @@ Register with your email and select your role (Designer, Reviewer, Product Manag
 - **Development**: Free (local Docker)
 - **Production**: ~$20-50/month (VPS + MongoDB Atlas)
 
-## 🐛 Troubleshooting
 
-### Common Issues
-
-1. **AI Analysis Fails**
-   - Check OpenAI API key is valid
-   - Verify image format (PNG/JPG)
-   - Check file size (max 10MB)
-
-2. **Upload Issues**
-   - Ensure file is image format
-   - Check file size limits
-   - Verify network connection
-
-3. **Docker Issues**
-   - Run `docker-compose down` and `docker-compose up --build`
-   - Check logs: `docker-compose logs [service-name]`
 
 ### Debug Mode
 
@@ -235,66 +219,7 @@ designsight/
 └── README.md
 ```
 
-## 🔒 Security Considerations
 
-- JWT tokens for authentication
-- Input validation and sanitization
-- File upload restrictions
-- Rate limiting on API endpoints
-- CORS configuration
-- Environment variable protection
 
-## 🚀 Deployment
-
-### Production Deployment
-
-1. **Set up environment variables**
-2. **Configure domain and SSL**
-3. **Set up MongoDB Atlas or production database**
-4. **Deploy with Docker Compose**
-5. **Configure reverse proxy (nginx)**
-
-### Environment Variables
-
-```bash
-# Production environment variables
-NODE_ENV=production
-MONGODB_URI=mongodb+srv://user:pass@cluster.mongodb.net/designsight
-JWT_SECRET=your-super-secure-jwt-secret
-OPENAI_API_KEY=your-openai-api-key
-CLIENT_URL=https://your-domain.com
-```
-
-## 📝 License
-
-MIT License - see LICENSE file for details
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📞 Support
-
-For issues and questions:
-- Create an issue in the repository
-- Check the troubleshooting section
-- Review the API documentation
-
-## 🎯 Roadmap
-
-- [ ] Real-time collaboration with WebSockets
-- [ ] Advanced AI models integration
-- [ ] Design system integration
-- [ ] Mobile app
-- [ ] Slack/Teams integration
-- [ ] Advanced analytics dashboard
-
----
-
-**Note**: This is a prototype application. For production use, implement additional security measures, error handling, and performance optimizations.
 
 
